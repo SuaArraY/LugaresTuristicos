@@ -9,4 +9,9 @@ class ImageController extends Controller
     public function index(){
         return view('Images.index');
     }
+
+    public function create(){
+        return view('Images.create');
+    }
+
 }

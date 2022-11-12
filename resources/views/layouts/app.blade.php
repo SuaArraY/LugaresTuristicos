@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
 <body>
+
+    <header>
+        <nav>
+            <div>
+                <p>Icono</p>
+            </div>
+            <ul>
+                <a href="/images">Gallery</a>
+                <a href="/images/create">Registrar</a>
+            </ul>
+        </nav>
+    </header>
+
+
     @yield('content')
 </body>
 </html>
