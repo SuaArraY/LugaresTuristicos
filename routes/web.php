@@ -10,3 +10,4 @@ use App\Http\Controllers\ImageController;
 Route::get('/',[ImageController::class, 'index']);
 Route::get('/images',[ImageController::class, 'index']);
 Route::get('/images/create',[ImageController::class, 'create']);
+Route::post('/images/create',[ImageController::class, 'store']);

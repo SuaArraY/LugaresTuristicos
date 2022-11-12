@@ -1,7 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    
-    <h1>hola</h1>
 
+<div>
+    <form action="" method="POST" enctype="multipart/form-data">
+        @csrf
+        <input type="file" accept="image/*" name="image">
+        <br>
+        <input type="submit">
+    </form>
+</div>
+   
 @endsection
