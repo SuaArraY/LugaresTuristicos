@@ -43,6 +43,8 @@ class TareaController extends Controller
             'fecha_limite' => 'required|date_format:Y-m-d\TH:i',
             'mensaje' => 'required',
         ]);
+        $tarea = Tarea::create($datos);
+        return redirect()->route('images.index');
     }
 
     /**

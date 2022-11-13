@@ -9,17 +9,17 @@
             <div>
                 <div>
                    <label for="InputNombre" >Nombre y Apellido:</label>
-                   <input type="text" name="nombre" id="InputNombre" placeholder="Ingrese su nombre y apellido">
+                   <input type="text" name="nombre" id="InputNombre" placeholder="Ingrese su nombre y apellido" value="{{ old('nombre') }}">
                 </div>
 
                 <div>
                     <label for="InputTelefono">Celular: </label>
-                    <input type="text" name="telefono" id="InputTelefono" placeholder="Telefono">
+                    <input type="text" name="telefono" id="InputTelefono" placeholder="Telefono" value="{{ old('telefono') }}">
                 </div>
 
                 <div>
                     <label for="InputCorreo">Correo: </label>
-                    <input type="email" name="correo" id="InputCorreo" placeholder="Correo">
+                    <input type="email" name="correo" id="InputCorreo" placeholder="Correo" value="{{ old('correo') }}">
                 </div>
 
                 <div >
@@ -33,12 +33,12 @@
 
                 <div>
                     <label for="InputFechaLimite">* Fecha Limite </label>
-                   <input type="datetime-local" name="fecha_limite" id="InputFechaLimite"  >
+                   <input type="datetime-local" name="fecha_limite" id="InputFechaLimite"  value="{{ old('fecha_limite') }}>
                 </div>
 
                 <div>
                     <label for="TextArea">Mensaje: </label>
-                   <input type="descripcion" name="mensaje" id="InputFechaLimite"  >
+                   <input type="descripcion" name="mensaje" id="InputFechaLimite" value="{{ old('mensaje') }}" >
                 </div>
 
                 <div>
