@@ -9,7 +9,9 @@ use App\Models\Image;
 class ImageController extends Controller
 {
     public function index(){
-        return view('Images.index');
+
+        $images = Image::all();
+        return view('Images.index', compact('images'));
     }
 
     public function create(){

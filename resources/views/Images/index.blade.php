@@ -2,6 +2,9 @@
 
 @section('content')
     
-    <h1>hola desde la carpeta imagenes-index</h1>
+    @foreach ($images as $row)
+        <img src="images/{{ $row->image }}" alt="Image">
+    @endforeach
+    
 
 @endsection
