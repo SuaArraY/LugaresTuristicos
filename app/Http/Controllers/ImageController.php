@@ -17,11 +17,13 @@ class ImageController extends Controller
     }
 
     public function store(Request $request){
-        $getImage = $request->image->getClientOriginalName();
+        $nameImage = $request->image->getClientOriginalName();
 
         $image = new Image();
 
-        $image->image = $getImage;
+        $image->image = $nameImage;
+
+        $request->image->move(public_path('images'),$nameImage);
 
         $image->save();
 
