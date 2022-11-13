@@ -14,7 +14,8 @@ class TareaController extends Controller
      */
     public function index()
     {
-        
+        $tareas = Tarea::orderByDesc('id');
+        return view('tarea.tareaindex',compact('tareas'));
     }
 
     /**
@@ -44,7 +45,7 @@ class TareaController extends Controller
             'mensaje' => 'required',
         ]);
         $tarea = Tarea::create($datos);
-        return redirect()->route('images.index');
+        return redirect()->route('tarea.index');
     }
 
     /**

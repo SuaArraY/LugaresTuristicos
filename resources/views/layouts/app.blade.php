@@ -21,7 +21,7 @@
             <a href="/images">Inicio</a>
             <a href="/images/create">Acerca de</a>
             <a href="{{ route('tarea.create') }}">Portafolio</a>
-            <a href="">Servicios</a>
+            <a href="{{ route('tarea.index') }}">Servicios</a>
             <a href="">Contacto</a>
         </nav>
         <section class="textos-header">

@@ -33,7 +33,7 @@
 
                 <div>
                     <label for="InputFechaLimite">* Fecha Limite </label>
-                   <input type="datetime-local" name="fecha_limite" id="InputFechaLimite"  value="{{ old('fecha_limite') }}>
+                   <input type="datetime-local" name="fecha_limite" id="InputFechaLimite"  value="{{ old('fecha_limite') }}">
                 </div>
 
                 <div>
