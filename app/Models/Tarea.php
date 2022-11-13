@@ -16,6 +16,8 @@ class Tarea extends Model
         'correo',
         'hotel',
         'fecha_limite',
+        'mensaje',
     ];
     protected $dates = ['fecha_limite'];
+
 }

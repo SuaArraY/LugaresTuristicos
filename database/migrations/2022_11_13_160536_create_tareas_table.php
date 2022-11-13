@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('correo');
             $table->tinyInteger('hotel');
             $table->timestamp('fecha_limite');
+            $table->string('mensaje');
             $table->timestamps();
         });
     }
