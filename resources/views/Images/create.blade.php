@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('title', "Registrar Imagenes")
 @section('content')
 
 <div>

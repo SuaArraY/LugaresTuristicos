@@ -12,26 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>@yield('title')</title>
 </head>
 <body>
 
-    {{-- <header>
-        <nav>
-            <div>
-                <p>Icono</p>
-            </div>
-            <ul>
-                <a href="/images">Gallery</a>
-                <a href="/images/create">Registrar</a>
-            </ul>
-        </nav>
-    </header> --}}
     <header>
         <nav>
             <a href="/images">Inicio</a>
             <a href="/images/create">Acerca de</a>
-            <a href="">Portafolio</a>
+            <a href="{{ route('tarea.create') }}">Portafolio</a>
             <a href="">Servicios</a>
             <a href="">Contacto</a>
         </nav>
