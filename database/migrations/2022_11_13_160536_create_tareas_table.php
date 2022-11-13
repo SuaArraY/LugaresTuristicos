@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('tareas', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre');
+            $table->string('telefono');
+            $table->string('correo');
+            $table->tinyInteger('hotel');
+            $table->timestamp('fecha_limite');
             $table->timestamps();
         });
     }
