@@ -35,7 +35,14 @@ class TareaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $datos = $request->validate([
+            'nombre'    => 'required',
+            'telefono' => 'required',
+            'correo'    => 'required',
+            'hotel' => 'required|numeric|min:0|max:2',
+            'fecha_limite' => 'required|date_format:Y-m-d\TH:i',
+            'mensaje' => 'required',
+        ]);
     }
 
     /**

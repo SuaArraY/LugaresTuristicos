@@ -4,7 +4,8 @@
 
 @section('content')
     
-        <form action="">
+        <form action="{{ route('tarea.store') }}" method="POST">
+            @csrf
             <div>
                 <div>
                    <label for="InputNombre" >Nombre y Apellido:</label>
@@ -38,6 +39,12 @@
                 <div>
                     <label for="TextArea">Mensaje: </label>
                    <input type="descripcion" name="mensaje" id="InputFechaLimite"  >
+                </div>
+
+                <div>
+                    <button type="submit">
+                        Guardar
+                    </button>
                 </div>
 
             </div>

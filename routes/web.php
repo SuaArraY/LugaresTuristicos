@@ -14,3 +14,4 @@ Route::get('/images/create',[ImageController::class, 'create']);
 Route::post('/images/create',[ImageController::class, 'store']);
 
 Route::get('tarea/registrar', [TareaController::class ,'create'])->name('tarea.create');
+Route::post('tarea/guardar', [TareaController::class, 'store'])->name('tarea.store');
