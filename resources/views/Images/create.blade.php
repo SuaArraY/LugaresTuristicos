@@ -8,6 +8,7 @@
         @csrf
         <input type="file" accept="image/*" name="image">
         <br>
+        <input type="text" name="descripcion">
         <input type="submit">
     </form>
 </div>

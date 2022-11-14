@@ -18,7 +18,7 @@
 
     <header>
         <nav>
-            <a href="/images">Inicio</a>
+            <a href="{{ route('images.index') }}">Inicio</a>
             <a href="/images/create">Acerca de</a>
             <a href="{{ route('tarea.create') }}">Portafolio</a>
             <a href="{{ route('tarea.index') }}">Servicios</a>

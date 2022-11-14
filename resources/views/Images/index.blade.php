@@ -8,7 +8,7 @@
             @foreach ($images as $row)
             <div class="card">
                 <img src="images/{{ $row->image }}" alt="Image">
-                <h4>Datos</h4>
+                <h4> {{ $row->descripcion }}</h4>
                 
                 <a href="">leer</a>
             </div>

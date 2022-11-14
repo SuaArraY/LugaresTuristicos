@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Tarea;
 use Illuminate\Http\Request;
 
+
+
 class TareaController extends Controller
 {
     /**
@@ -14,7 +16,7 @@ class TareaController extends Controller
      */
     public function index()
     {
-        $tareas = Tarea::orderByDesc('id');
+        $tareas = Tarea::orderByDesc('id')->get();
         return view('tarea.tareaindex',compact('tareas'));
     }
 

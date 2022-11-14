@@ -9,8 +9,8 @@ use App\Http\Controllers\TareaController;
 // });
 
 
-Route::get('/',[ImageController::class, 'index']);
-Route::get('images',[ImageController::class, 'index'])->name('images.index');
+Route::get('/',[ImageController::class, 'index'])->name('images.index');
+// Route::get('images',[ImageController::class, 'index'])->name('images.index');
 Route::get('/images/create',[ImageController::class, 'create']);
 Route::post('/images/create',[ImageController::class, 'store']);
 

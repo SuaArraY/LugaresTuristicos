@@ -26,10 +26,10 @@ class ImageController extends Controller
         $image->image = $nameImage;
 
         $request->image->move(public_path('images'),$nameImage);
-
+        
         $image->save();
-
-        return redirect()->to('/images');
+        
+        return redirect()->route('images.index');
     }
 
 }
