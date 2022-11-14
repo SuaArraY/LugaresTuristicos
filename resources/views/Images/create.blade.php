@@ -10,11 +10,19 @@
         @csrf
         <input type="file" accept="image/*" name="image">
         <br>
+        <label for="">Titulo</label>
+        <input type="text">
+        <br>
+        <label for="">Descripcion </label>
         <input type="text" name="descripcion">
+        <br>
         <input type="submit">
+        <br>
+        <label for="">No se puede enviar los datos del titulo y descripcion, solo se puede enviar las imagenes</label>
+        <br>
+        <label for="">Actualizacion a futuro</label>
+        
     </form>
 </div>
-
-
-   
+ 
 @endsection

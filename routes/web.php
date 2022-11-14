@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\TareaController;
-use App\Http\Controllers\ServicioController;
 
 // Route::get('/', function () {
 //     return view('layouts.app');
@@ -12,7 +11,7 @@ use App\Http\Controllers\ServicioController;
 
 Route::get('/',[ImageController::class, 'index'])->name('images.index');
 // Route::get('images',[ImageController::class, 'index'])->name('images.index');
-Route::get('/images/create',[ImageController::class, 'create']);
+Route::get('/images/create',[ImageController::class, 'create'])->name('images.create');
 Route::post('/images/create',[ImageController::class, 'store']);
 
 Route::get('tarea/registrar', [TareaController::class ,'create'])->name('tarea.create');

@@ -4,7 +4,6 @@
 
 @section('content')
     
-        
             @foreach ($images as $row)
             <div class="card">
                 <img src="images/{{ $row->image }}" alt="Image">
@@ -14,6 +13,4 @@
                 <a href="{{ route('tarea.create') }}">Resevar Viaje</a>
             </div>
             @endforeach
-        
-   
 @endsection

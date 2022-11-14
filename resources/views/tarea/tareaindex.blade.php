@@ -4,7 +4,6 @@
 
 @section('content')
     
-
     <table >
         <thead>
             <tr>
@@ -18,8 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            
-                
+                           
             @foreach ($tareas as $tarea)
                 <tr>
                     <td>

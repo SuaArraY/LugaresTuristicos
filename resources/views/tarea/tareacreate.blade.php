@@ -1,9 +1,6 @@
 @extends('layouts.app')
-
 @section('title', "Registro")
-
 @section('content')
-    
     <form action="{{ route('tarea.store') }}" method="POST">
         <h2>Reserva Viaje</h2>
         @csrf
@@ -12,17 +9,14 @@
             <label for="InputNombre" class=form-label>Nombre y Apellido:</label>
             <input type="text" name="nombre" id="InputNombre"  class="name" placeholder="Ingrese su nombre y apellido" value="{{ old('nombre') }}">
             </div>
-
             <div class="datos">
                 <label for="InputTelefono">Celular: </label>
                 <input type="text" class="celular" name="telefono" id="InputTelefono" placeholder="Telefono" value="{{ old('telefono') }}">
             </div>
-
             <div class="datos">
                 <label for="InputCorreo">Correo: </label>
                 <input type="email" class="correo" name="correo" id="InputCorreo" placeholder="Correo" value="{{ old('correo') }}">
             </div>
-
             <div class="datos">
                 <label for="SelectHotel" >Alojamiento: </label>
                 <select name="hotel" id="SelectHotel" class="hotel">
