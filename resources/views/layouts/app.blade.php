@@ -8,6 +8,8 @@
     <!--link para conectar a la carpeta css -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
+    
+
     <!--link para las letras diseño-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +18,9 @@
 </head>
 <body>
 
-    <header>
+    <header id="titulo">
         <nav>
-            <a href="{{ route('images.index') }}">Inicio</a>
+            <a href="{{ route('images.index') }}" >Inicio</a>
             <a href="/images/create">Acerca de</a>
             <a href="{{ route('tarea.create') }}">Portafolio</a>
             <a href="{{ route('tarea.index') }}">Servicios</a>
@@ -32,12 +34,16 @@
         <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
     </header>
 
-    <section class="container">
+    <section class="container" >
         @yield('content')
     </section>
    
     <footer>
-        <div>soy el footer</div>
+        <section>
+            <a href="yosec.suarez@gmail.com">Contáctame</a>
+            <a href="#titulo">Ir al comienzo</a>
+        </section>
+        <p>Copyright 2022</p>
     </footer>
    
 </body>
