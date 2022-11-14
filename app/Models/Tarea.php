@@ -19,5 +19,5 @@ class Tarea extends Model
         'mensaje',
     ];
     protected $dates = ['fecha_limite'];
-
+    
 }

@@ -5,16 +5,15 @@
 @section('content')
     
 
-    <table class="table table-stripped table-hover">
+    <table >
         <thead>
             <tr>
         
                 <th>Nombre</th>
-                <th>Telefono</th>
+                <th>Celular</th>
                 <th>Correo</th>
-                <th>Hotel</th>
+                <th>Alojamiento</th>
                 <th>Fecha</th>
-                <th>---</th>
                 <th>Mensaje</th>
             </tr>
         </thead>

@@ -50,48 +50,5 @@ class TareaController extends Controller
         return redirect()->route('tarea.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Tarea  $tarea
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Tarea $tarea)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Tarea  $tarea
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Tarea $tarea)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Tarea  $tarea
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Tarea $tarea)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Tarea  $tarea
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Tarea $tarea)
-    {
-        //
-    }
+    
 }

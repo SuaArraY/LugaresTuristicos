@@ -11,7 +11,7 @@
                 <h4> {{ $row->nombre }}</h4>
                 
                 <p>{{ $row->descripcion }}</p>
-                <a href="">leer</a>
+                <a href="{{ route('tarea.create') }}">Resevar Viaje</a>
             </div>
             @endforeach
         

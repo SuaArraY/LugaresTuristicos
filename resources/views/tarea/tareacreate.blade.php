@@ -5,7 +5,7 @@
 @section('content')
     
     <form action="{{ route('tarea.store') }}" method="POST">
-        <h2>Registro de Viaje</h2>
+        <h2>Reserva Viaje</h2>
         @csrf
         <div class= "row">
             <div class="datos">
@@ -24,16 +24,19 @@
             </div>
 
             <div class="datos">
-                <label for="SelectHotel" >Hotel: </label>
+                <label for="SelectHotel" >Alojamiento: </label>
                 <select name="hotel" id="SelectHotel" class="hotel">
-                    <option value="0">baja</option>
-                    <option value="1">lujo</option>                          
+                    <option value="0">Campamento</option>
+                    <option value="1">Hotel 2 estrellas</option>  
+                    <option value="2">Hotel 3 estrellas</option>   
+                    <option value="3">Hotel 4 estrellas</option>   
+                    <option value="4">Hotel 5 estrellas</option>                           
                 </select>
                 
             </div>
 
             <div class="datos">
-                <label for="InputFechaLimite">* Fecha Limite </label>
+                <label for="InputFechaLimite">* Fecha Reserva</label>
             <input type="datetime-local" name="fecha_limite" id="InputFechaLimite"  value="{{ old('fecha_limite') }}">
             </div>
 
