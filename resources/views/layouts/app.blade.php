@@ -36,6 +36,9 @@
         @yield('content')
     </section>
    
+    <footer>
+        <div>soy el footer</div>
+    </footer>
    
 </body>
 </html>
